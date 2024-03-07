@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Interactions</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link href="global.css" rel="stylesheet" type="text/css"/>
+    <link href="1_intermittent.css" rel="stylesheet" type="text/css"/>
+  </head>
+  
+  <body>
+
+    <button id="navigation" type="button" onclick="window.open('/index.html','_self');" >INTERMITTENT INTERACTION</button> 
+    <div id="mute"><img id="mute-icon" src="images/unmute.png" alt="mute icon" /></div> 
+    
+      <div class="outer" id="page1" style="display:none"><div class="inner">  
+        <p class="large-text">Select your favorite music genres</p>
+        <input id="pop" type="checkbox" />
+        <label for="pop">Pop</label>
+        <input id="rock" type="checkbox" />
+        <label for="rock">Rock</label>
+        <input id="techno" type="checkbox" />
+        <label for="techno">Techno</label>
+        <input id="jazz" type="checkbox" />
+        <label for="jazz">Jazz</label>
+        <input id="classical" type="checkbox" />
+        <label for="classical">Classical</label>
+        <input id="hip hop" type="checkbox" />
+        <label for="hip hop">Hip Hop</label>
+  
+        <br><br><br><br>
+        
+        <button class="button-big" type="button" id="continue" onclick="selectFavoriteGenres();">Continue</button>
+      </div></div>
+  
+      <div class="outer" id="page2" style="display:none"><div class="inner">
+        <p class="large-text">Top Recommended Playlists!</p>
+        <p class="small-text">The playlists are custom made for your profile</p>
+        <div id="playlists">
+          <button class="button-square" value="pop" type="button">Pop Mix</button>
+          <button class="button-square" value="pop" type="button">TOP POP</button>
+          <button class="button-square" value="pop" type="button">Its Hits Denmark</button>
+          <button class="button-square" value="pop" type="button">Happy Hits</button>
+          <button class="button-square" value="pop" type="button">Guilty Pleasures</button>
+          <button class="button-square" value="pop" type="button">Just Good Music</button>
+          
+          <button class="button-square" value="rock" type="button">Rock Classics</button>
+          <button class="button-square" value="rock" type="button">Kick Ass Metal</button>
+          <button class="button-square" value="rock" type="button">misfits 2.0</button>
+          <button class="button-square" value="rock" type="button">Noisy</button>
+          <button class="button-square" value="rock" type="button">This is Pink Floyd</button>
+          <button class="button-square" value="rock" type="button">Soft Rock</button>
+
+          <button class="button-square" value="jazz" type="button">Jazz Classics</button>
+          <button class="button-square" value="jazz" type="button">Late Night Jazz</button>
+          <button class="button-square" value="jazz" type="button">The Cole Porter Songbook</button>
+          <button class="button-square" value="jazz" type="button">State of Jazz</button>
+          <button class="button-square" value="jazz" type="button">This Is Nina Simone</button>
+          <button class="button-square" value="jazz" type="button">Bossa Nova Classics</button>
+
+
+          <button class="button-square" value="techno" type="button">Techno Mix</button>
+          <button class="button-square" value="techno" type="button">TechNo</button>
+          <button class="button-square" value="techno" type="button">Open Air</button>
+          <button class="button-square" value="techno" type="button">Trance 1990s-2000s</button>
+          <button class="button-square" value="techno" type="button">Workout Techno House 2023</button>
+          <button class="button-square" value="techno" type="button">BERLIN TECHNO</button>
+          
+          <button class="button-square" value="classical" type="button">Classical Essentials</button>
+          <button class="button-square" value="classical" type="button">Mellow Cello</button>
+          <button class="button-square" value="classical" type="button">This Is Beethoven</button>
+          <button class="button-square" value="classical" type="button">Soft Piano</button>
+          <button class="button-square" value="classical" type="button">Morning Study</button>
+          <button class="button-square" value="classical" type="button">Not Quite Classical</button>
+          
+          <button class="button-square" value="hip hop" type="button">Hip-Hop Mix</button>
+          <button class="button-square" value="hip hop" type="button">tempo</button>
+          <button class="button-square" value="hip hop" type="button">I Love My 90s Hip Hop</button>
+          <button class="button-square" value="hip hop" type="button">Gold School</button>
+          <button class="button-square" value="hip hop" type="button">No Cap</button>
+          <button class="button-square" value="hip hop" type="button">New Joints</button>
+        </div>
+      </div></div>
+  
+      <div class="outer" id="page3" style="display:none"><div class="inner">
+        <p id="playlistTitle" class="large-text">...</p>
+        
+        <div class="table">
+          <div class="first-row">
+            <p class="title">Title</p>
+            <p class="artist">Artist</p>
+          </div>
+          <div id="populateMe"></div>
+        </div>
+        
+        <button class="button-big" type="button" onclick="backToPlaylists();">Return</button>
+      </div></div>
+
+    <script src="global.js" type="text/javascript"></script>
+    <script src="1_intermittent.js"></script>
+    
+  </body>
+</html>

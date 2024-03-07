@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Interactions</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link href="global.css" rel="stylesheet" type="text/css"/>
+    <link href="index.css" rel="stylesheet" type="text/css"/>
+  </head>
+  
+  <body>
+
+    <div class="center" id="page1" style="display:none">  
+      <p class="large-text">Select your favorite music genres</p>
+      <input id="pop" type="checkbox" />
+      <label for="pop">Pop</label>
+      <input id="rock" type="checkbox" />
+      <label for="rock">Rock</label>
+      <input id="techno" type="checkbox" />
+      <label for="techno">Techno</label>
+      <input id="jazz" type="checkbox" />
+      <label for="jazz">Jazz</label>
+      <input id="classical" type="checkbox" />
+      <label for="classical">Classical</label>
+      <input id="hip hop" type="checkbox" />
+      <label for="hip hop">Hip Hop</label>
+
+      <br>
+      
+      <button class="button-big" type="button" id="continue" onclick="save();">Continue</button>
+    </div>
+
+    <div class="center" id="page2" style="display:none">
+      <p class="large-text">HUMAN-AI INTERACTIONS</p>
+
+      <button class="button-big" type="button" onclick="window.location.href='./1_intermittent.html';">Intermittent</button>
+      <button class="button-big" type="button" onclick="window.location.href='./2_continuous.html';">Continuous</button>
+      <button class="button-big" type="button" onclick="window.location.href='./3_proactive.html';">Proactive</button>
+    </div>
+
+    <div class="floating">
+      <img src="images/aau-logo.png" alt="AAU logo" height="30">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <img src="images/hcc-logo.png" alt="HCC logo" height="30">
+    </div>
+
+    <script src="global.js" type="text/javascript"></script>
+    <script src="index.js"></script>
+      
+  </body>
+</html>

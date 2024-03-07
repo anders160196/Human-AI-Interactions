@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Interactions</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link href="global.css" rel="stylesheet" type="text/css"/>
+    <link href="3_proactive.css" rel="stylesheet" type="text/css"/>
+  </head>
+  
+  <body>
+
+    <button id="navigation" type="button" onclick="window.open('/index.html','_self');" >PROACTIVE INTERACTION</button>
+    <div id="mute"><img id="mute-icon" src="images/unmute.png" alt="mute icon" /></div> 
+    
+    <section class="center">
+      <div class="tracker">
+        <div class="emotion">
+          <img src="images/joy.png" alt="joy logo">
+          <div class="box joy"></div>
+          <div class="box joy"></div>
+          <div class="box joy"></div>
+          <div class="box joy"></div>
+        </div><br>
+        <div class="emotion">
+          <img src="images/sorrow.png" alt="sorrow logo" >
+          <div class="box sorrow"></div>
+          <div class="box sorrow"></div>
+          <div class="box sorrow"></div>
+          <div class="box sorrow"></div>
+        </div><br>
+        <div class="emotion">
+          <img src="images/anger.png" alt="anger logo" >
+          <div class="box anger"></div>
+          <div class="box anger"></div>
+          <div class="box anger"></div>
+          <div class="box anger"></div>
+        </div><br>
+        <div class="emotion">  
+          <img src="images/surprise.png" alt="surprise logo" >
+          <div class="box surprise"></div>
+          <div class="box surprise"></div>
+          <div class="box surprise"></div>
+          <div class="box surprise"></div>
+        </div>
+        <h1 id="message">Detecting...</h1>
+      </div>
+      
+      <div class="video-container">
+      <video id="video" autoplay></video>
+      <canvas id="canvas" style="display:none;"></canvas>
+      <button id="button" type="button" onclick="toggleDetection();">Pause Detection</button>
+    </div>
+    </section>
+    
+    <p id="result-label" class="floating" style="visibility: hidden;"></p>
+
+    <script src="global.js" type="text/javascript"></script>
+    <script type = "text/javascript" src="3_proactive.js"></script>
+    
+  </body>
+</html>

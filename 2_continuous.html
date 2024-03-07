@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Interactions</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link href="global.css" rel="stylesheet" type="text/css"/>
+    <script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
+  </head>
+  
+  <body>
+    <div id="myDiv" class="graph"></div>
+    <div id="overlay"></div>
+    <!-- <p>Drag to explore more songs</p><p>Hover over a song to listen</p> -->
+    
+    <p>
+      <img id="hover-icon" src="images/drag.png"/>&nbsp&nbsp&nbsp&nbspDrag with cursor to explore more songs<br>
+      <img id="drag-icon" src="images/hover.png"/>&nbsp&nbsp&nbsp&nbspHover over the circles to play the song
+    </p>
+
+    <button id="navigation" type="button" onclick="window.open('/index.html','_self');" >CONTINUOUS INTERACTION</button>
+    <div id="mute"><img id="mute-icon" src="images/unmute.png" alt="mute icon" /></div> 
+
+    <script src="global.js" type="text/javascript"></script>
+    <script src="tsne.js"></script>
+    <script type="module" src="2_continuous.js"></script>
+    <link href="2_continuous.css" rel="stylesheet" type="text/css"/>
+    
+  </body>
+</html>
